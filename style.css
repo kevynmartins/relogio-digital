@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300&display=swap');/*fonte importada do google fontes*/
+
+/* para selecionar todos os elementos em css e zerar as formatações que já vem em uns elementos */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif; /* importando a fonte do google */
+}
+
+body {
+    height: 100vh; /*cobrir a tela inteira*/
+    background: linear-gradient(120deg, #acc8ecd8, #2d20dfda); /* plano de fundo vai ficar com duas cores em gradiente*/
+    display: flex; /*para a linhar*/
+    align-items: center; /*para centralizar*/
+    justify-content: center; /*para centralizar também*/
+}
+/* essa é a div do relogio inteiro*/
+.relogio {
+    display: flex; /*para centralizar e deixar um ao lado do outro */
+    align-items: center; /* para centralizar também */
+    justify-content: space-around; 
+    height: 200px; /*altura */
+    width: 550px; /*largura */
+    background: transparent; /*fundo transparente*/
+    border-radius: 3px; /*borda dos cantos*/
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5); /*sombra da caixa as medidas dos cantos e a cor */
+
+}
+/*div do relogio por parte*/
+.relogio div {
+    height: 170px; /* altura*/
+    width: 150px; /*largura*/
+    display: flex; /* para deixar um do lado do outro e centralizar*/
+    flex-direction: column; /* para colocar os elementos da div um embaixo do outro*/
+    align-items: center; /*centralizar o elementos*/
+    justify-content: center; /*centralizar também*/
+    color: #fff; /* cor */
+    background: rgba(5, 5, 5, .9); /* cor de fundo*/
+    box-shadow: 5px 5PX 15PX rgba(0, 0, 0, .7); /*sombra da caixa e cor*/
+    border-radius: 7px; /*borda da caixa para ficar arredondado*/
+    letter-spacing: 3px; /*espaçamento das letras*/
+
+}
+/*div dos spans do relogio*/
+.relogio span {
+    font-weight: bolder; /* vai engrosar as letras*/
+    font-size: 60px; /*tamanho da fonte*/
+
+}
+/*div do span do tempo*/
+.relogio span.tempo {
+    font-size: 10px; /*tamanho da fonte*/
+    
+}
